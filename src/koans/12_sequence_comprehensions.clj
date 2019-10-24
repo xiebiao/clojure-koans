@@ -3,6 +3,7 @@
 
 (meditations
   "Sequence comprehensions can bind each element in turn to a symbol"
+;http://clojuredocs.org/clojure.core/for
   (= __
      (for [x (range 6)]
        x))
