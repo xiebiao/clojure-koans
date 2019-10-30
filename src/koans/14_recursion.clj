@@ -17,7 +17,7 @@
   (loop [result ()
               coll coll]
             
-              (if (empty? coll) 
+              (if (empty? coll)  
                 result 
                 (recur (conj result (first coll)) (rest coll)))))
 
@@ -26,8 +26,7 @@
                 n n]
                 (if (= n 0 )
                 result
-              (recur (* result n) (dec n))
-                )
+                (recur (* result n) (dec n)))
                 ))
 
 (meditations
